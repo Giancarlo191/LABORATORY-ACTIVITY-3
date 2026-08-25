@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Store Checkout System</title>
+</head>
+<body>
+
+<h1>MINI STORE CHECKOUT SYSTEM</h1>
+
+<label for="customerName">Customer Name</label><br>
+<input type="text" id="customerName"><br><br>
+
+<label for="productCount">Number of Products</label><br>
+<input type="number" id="productCount">
+<button id="generateBtn">Generate Product Fields</button><br><br>
+
+<div id="productsContainer"></div>
+
+<label for="deliveryOption">Delivery Option</label><br>
+<select id="deliveryOption">
+  <option value="1">Store Pickup - ₱0</option>
+  <option value="2">Standard Delivery - ₱80</option>
+  <option value="3">Express Delivery - ₱150</option>
+</select><br><br>
+
+<div id="validationMessage"></div>
+
+<button id="calculateBtn">Calculate Order</button>
+
+<pre id="orderSummary"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
